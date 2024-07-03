@@ -1,0 +1,108 @@
+services:
+  proof-server:
+    image: "midnightnetwork/proof-server:2.0.7"
+    container_name: 'bboard-proof-server'
+    ports:
+      - "6300"
+    environment:
+      RUST_BACKTRACE: "full"
+  chain-indexer:
+    container_name: 'bboard-chain-indexer'
+    image: 'midnightnetwork/midnight-pubsub-indexer:1.2.0'
+    platform: linux/amd64
+    ports:
+      - '8088'
+    command: ['-Dlogback.configurationFile=logback-json-file.xml']
+    environment:
+      OPERATION_MODE: 'chain-indexer'
+      LOG_LEVEL: 'TRACE'
+      LEDGER_NETWORK_ID: 'Undeployed'
+      SUBSTRATE_NODE_WS_URL: 'ws://node:9944'
+      DB_VENDOR: 'postgresql'
+      DB_URL: 'postgres:5432/indexer'
+      DB_USER: 'indexer'
+      DB_PASS: 'indexer'
+      REDIS_URL: 'tcp://redis:6379'
+      OTEL_JAVAAGENT_ENABLED: 'false'
+    healthcheck:
+      test: ['CMD', 'sh', '-c', "grep -q 'Successfully applied .* migrations to schema' /tmp/app_logs/server.log"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    depends_on:
+      node:
+        condition: service_started
+      postgres:
+        condition: service_started
+      redis:
+        condition: service_started
+  wallet-indexer:
+    container_name: 'bboard-wallet-indexer'
+    image: 'midnightnetwork/midnight-pubsub-indexer:1.2.0'
+    platform: linux/amd64
+    expose: ['8088']
+    ports:
+      - '0:8088'
+    environment:
+      OPERATION_MODE: 'wallet-indexer'
+      LOG_LEVEL: 'TRACE'
+      LEDGER_NETWORK_ID: 'Undeployed'
+      SUBSTRATE_NODE_WS_URL: 'ws://node:9944'
+      DB_VENDOR: 'postgresql'
+      DB_URL: 'postgres:5432/indexer'
+      DB_USER: 'indexer'
+      DB_PASS: 'indexer'
+      REDIS_URL: 'tcp://redis:6379'
+      OTEL_JAVAAGENT_ENABLED: 'false'
+    depends_on:
+      chain-indexer:
+        condition: service_healthy
+  graphql-api:
+    container_name: 'bboard-graphql-api'
+    image: 'midnightnetwork/midnight-pubsub-indexer:1.2.0'
+    platform: linux/amd64
+    expose: ['8088']
+    ports:
+      - '8088'
+    environment:
+      OPERATION_MODE: 'pubsub'
+      LOG_LEVEL: 'TRACE'
+      LEDGER_NETWORK_ID: 'Undeployed'
+      SUBSTRATE_NODE_WS_URL: 'ws://node:9944'
+      DB_VENDOR: 'postgresql'
+      DB_URL: 'postgres:5432/indexer'
+      DB_USER: 'indexer'
+      DB_PASS: 'indexer'
+      REDIS_URL: 'tcp://redis:6379'
+      OTEL_JAVAAGENT_ENABLED: 'false'
+    depends_on:
+      chain-indexer:
+        condition: service_healthy
+  postgres:
+    container_name: 'bboard-postgres'
+    image: postgres:15
+    ports:
+      - '0:5432'
+    environment:
+      POSTGRES_USER: 'indexer'
+      POSTGRES_PASSWORD: 'indexer'
+      POSTGRES_DB: 'indexer'
+  redis:
+    container_name: 'bboard-redis'
+    image: redis:7.2.4
+    ports:
+      - 0:6379
+  node:
+    image: "midnightnetwork/midnight-node:0.3.2-e85e6a2"
+    platform: linux/amd64
+    container_name: 'bboard-node'
+    ports:
+      - "9944"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9944/health" ]
+      interval: 2s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    environment:
+      RUN_DEV_NET: "TRUE"
