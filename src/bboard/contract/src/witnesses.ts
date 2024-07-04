@@ -16,10 +16,12 @@ import { WitnessContext } from '@midnight-ntwrk/compact-runtime';
 
 export type BBoardPrivateState = {
   // EXERCISE 1a: FILL IN A REPRESENTATION OF THE PRIVATE STATE
+  readonly secretKey: Uint8Array; // EXERCISE ANSWER
 };
 
 export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
   // EXERCISE 1b: INITIALIZE THE OBJECT OF TYPE BBoardPrivateState
+  secretKey, // EXERCISE ANSWER
 });
 
 /* **********************************************************************
@@ -52,5 +54,7 @@ export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
 export const witnesses = {
   local_secret_key: ({ privateState }: WitnessContext<Ledger, BBoardPrivateState>): [BBoardPrivateState, Uint8Array] => [
     // EXERCISE 2: WHAT ARE THE CORRECT TWO VALUES TO RETURN HERE?
+    privateState, // EXERCISE ANSWER
+    privateState.secretKey, // EXERCISE ANSWER
   ],
 };

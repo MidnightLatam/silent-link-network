@@ -1,22 +1,11 @@
-# Bulletin board contract and DApp
+# Midnight Example Applications
 
-This example implements a simple one-item bulletin board.  It allows
-users to post a single message at a time, and only the user who posted
-the message can take it down and make the board vacant again.
+This is a multi-package repo containing example applications that are used to showcase Midnight and its capabilities.
 
-The full description of the bulletin board scenario, as well as a
-detailed discussion of the code, can be found in part 3 of the
-Midnight developer tutorial.
+## Details
 
-The `bboard-tutorial` directory contains a version of the bulletin
-board DApp with some parts missing.  The tutorial guides you through
-the process of filling in the missing pieces.  If you are reading this
-in the `bboard-tutorial` directory, **do not expect the code to
-compile until after you have completed the tutorial**.
+Details of the contents of this repository can be found in [Midnight documentation](https://docs.midnight.network/)
 
-The `bboard` directory contains the solution to the problems posed in
-the tutorial.  You can think of it as the answer key to the
-`bboard-tutorial` example.  If you are reading this in the `bboard`
-directory, then the code should compile without changes, but do not
-look at it until after you make an effort to complete the exercises by
-following the tutorial.
+## Requirements
+
+Node.js - LTS/hydrogen
