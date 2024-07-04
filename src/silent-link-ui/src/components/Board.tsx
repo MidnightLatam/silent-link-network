@@ -18,11 +18,11 @@ import DeleteIcon from '@mui/icons-material/DeleteOutlined';
 import WriteIcon from '@mui/icons-material/EditNoteOutlined';
 import CopyIcon from '@mui/icons-material/ContentPasteOutlined';
 import StopIcon from '@mui/icons-material/HighlightOffOutlined';
-import { type BBoardDerivedState, type DeployedBBoardAPI } from '@midnight-ntwrk/bboard-api';
+import { type BBoardDerivedState, type DeployedBBoardAPI } from '@midnight-ntwrk/silent-link-api';
 import { useDeployedBoardContext } from '../hooks';
 import { type BoardDeployment } from '../contexts';
 import { type Observable } from 'rxjs';
-import { STATE } from '@midnight-ntwrk/bboard-contract';
+import { STATE } from '@midnight-ntwrk/silent-link-contract';
 import { EmptyCardContent } from './Board.EmptyCardContent';
 
 /** The props required by the {@link Board} component. */

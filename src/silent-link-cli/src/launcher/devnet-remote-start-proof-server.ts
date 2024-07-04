@@ -1,10 +1,10 @@
-import { DockerComposeEnvironment, Wait } from 'testcontainers';
 import { createLogger } from '../logger-utils.js';
 import { run } from '../index.js';
+import { currentDir, DevnetRemoteConfig } from '../config.js';
+import { DockerComposeEnvironment, Wait } from 'testcontainers';
 import path from 'node:path';
-import { currentDir, AriadneQaRemoteConfig } from '../config';
 
-const config = new AriadneQaRemoteConfig();
+const config = new DevnetRemoteConfig();
 config.setNetworkId();
 const dockerEnv = new DockerComposeEnvironment(path.resolve(currentDir, '..'), 'proof-server.yml').withWaitStrategy(
   'proof-server',

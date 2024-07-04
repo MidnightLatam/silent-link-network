@@ -6,7 +6,7 @@
 
 import { type MidnightProviders } from '@midnight-ntwrk/midnight-js-types';
 import { type DeployedContract, type StateWithZswap } from '@midnight-ntwrk/midnight-js-contracts';
-import type { STATE, BBoardPrivateState, Contract, Witnesses } from '@midnight-ntwrk/bboard-contract';
+import type { STATE, BBoardPrivateState, Contract, Witnesses } from '@midnight-ntwrk/silent-link-contract';
 
 /**
  * The private states consumed throughout the application.

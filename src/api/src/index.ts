@@ -20,7 +20,7 @@ import {
   pureCircuits,
   witnesses,
   STATE,
-} from '@midnight-ntwrk/bboard-contract';
+} from '@midnight-ntwrk/silent-link-contract';
 import * as utils from './utils/index.js';
 import { deployContract, findDeployedContract, withZswapWitnesses } from '@midnight-ntwrk/midnight-js-contracts';
 import { combineLatest, map, tap, from, type Observable } from 'rxjs';

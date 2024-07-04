@@ -7,7 +7,8 @@
     "examples/welcome/*",
     "examples/coracle/*",
     "examples/counter/*",
-    "examples/bboard/*"
+    "examples/bboard/*",
+    "src/*"
   ],
   "scripts": {
     "compact": "turbo run compact",
@@ -20,7 +21,7 @@
     "welcome-participant-ui": "turbo run start --filter=welcome-participant-ui",
     "welcome-organizer-cli": "turbo run start --filter=welcome-organizer-cli",
     "welcome-organizer-ui": "turbo run start --filter=welcome-organizer-ui",
-    "bboard-ui": "turbo run start --filter=bboard-ui"
+    "silent-link-ui": "turbo run start --filter=silent-link-ui"
   },
   "dependencies": {
     "@midnight-ntwrk/compact-runtime": "^0.6.13",
@@ -35,6 +36,7 @@
     "@midnight-ntwrk/midnight-js-types": "^0.1.15",
     "@midnight-ntwrk/wallet": "^3.5.11",
     "@midnight-ntwrk/wallet-api": "^3.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "fp-ts": "^2.16.1",
     "io-ts": "^2.2.20",
     "pino": "^8.16.0",

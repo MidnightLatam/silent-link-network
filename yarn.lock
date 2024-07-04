@@ -1243,78 +1243,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@midnight-ntwrk/bboard-api@workspace:*, @midnight-ntwrk/bboard-api@workspace:examples/bboard/api":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/bboard-api@workspace:examples/bboard/api"
-  dependencies:
-    "@midnight-ntwrk/bboard-contract": "workspace:*"
-    "@types/ws": "npm:^8.5.9"
-    allure-commandline: "npm:^2.28.0"
-    allure-jest: "npm:^2.15.1"
-    allure-js-commons: "npm:^2.15.1"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    pino: "npm:^8.16.1"
-    typescript: "npm:^5.2.2"
-    ws: "npm:^8.14.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/bboard-cli@workspace:examples/bboard/bboard-cli":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/bboard-cli@workspace:examples/bboard/bboard-cli"
-  dependencies:
-    "@midnight-ntwrk/bboard-api": "workspace:*"
-    "@midnight-ntwrk/bboard-contract": "workspace:*"
-    "@types/jest": "npm:^29.5.12"
-    "@types/ws": "npm:^8.5.9"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    pino: "npm:^8.16.1"
-    ts-jest: "npm:^29.1.2"
-    typescript: "npm:^5.2.2"
-    ws: "npm:^8.14.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/bboard-contract@workspace:*, @midnight-ntwrk/bboard-contract@workspace:examples/bboard/contract":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/bboard-contract@workspace:examples/bboard/contract"
-  dependencies:
-    "@midnight-ntwrk/compact": "workspace:*"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/bboard-ui@workspace:examples/bboard/bboard-ui":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/bboard-ui@workspace:examples/bboard/bboard-ui"
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@emotion/styled": "npm:^11.11.0"
-    "@midnight-ntwrk/bboard-api": "workspace:*"
-    "@midnight-ntwrk/bboard-contract": "workspace:*"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/material": "npm:^5.14.14"
-    "@originjs/vite-plugin-commonjs": "npm:^1.0.3"
-    "@types/react": "npm:^18.2.0"
-    "@types/react-dom": "npm:^18.2.0"
-    buffer: "npm:^6.0.3"
-    eslint: "npm:^8.52.0"
-    eslint-config-standard-with-typescript: "npm:^39.1.1"
-    eslint-plugin-react: "npm:^7.33.2"
-    http-server: "npm:^14.1.1"
-    jest: "npm:^29.7.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router-dom: "npm:6.17.0"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^4.5.1"
-  languageName: unknown
-  linkType: soft
-
 "@midnight-ntwrk/compact-runtime@npm:^0.6.13":
   version: 0.6.13
   resolution: "@midnight-ntwrk/compact-runtime@npm:0.6.13"
@@ -1335,36 +1263,6 @@ __metadata:
     typescript: "npm:^5.2.2"
   bin:
     run-compactc: src/run-compactc.cjs
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/counter-cli@workspace:examples/counter/counter-cli":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/counter-cli@workspace:examples/counter/counter-cli"
-  dependencies:
-    "@midnight-ntwrk/counter-contract": "workspace:*"
-    "@types/jest": "npm:^29.5.11"
-    "@types/ws": "npm:^8.5.9"
-    allure-commandline: "npm:^2.28.0"
-    allure-jest: "npm:^2.15.1"
-    allure-js-commons: "npm:^2.15.1"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    pino: "npm:^8.16.1"
-    ts-jest: "npm:^29.1.2"
-    typescript: "npm:^5.2.2"
-    ws: "npm:^8.14.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/counter-contract@workspace:*, @midnight-ntwrk/counter-contract@workspace:examples/counter/contract":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/counter-contract@workspace:examples/counter/contract"
-  dependencies:
-    "@midnight-ntwrk/compact": "workspace:*"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    typescript: "npm:^5.2.2"
   languageName: unknown
   linkType: soft
 
@@ -1483,6 +1381,78 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@midnight-ntwrk/silent-link-api@workspace:*, @midnight-ntwrk/silent-link-api@workspace:src/api":
+  version: 0.0.0-use.local
+  resolution: "@midnight-ntwrk/silent-link-api@workspace:src/api"
+  dependencies:
+    "@midnight-ntwrk/silent-link-contract": "workspace:*"
+    "@types/ws": "npm:^8.5.9"
+    allure-commandline: "npm:^2.28.0"
+    allure-jest: "npm:^2.15.1"
+    allure-js-commons: "npm:^2.15.1"
+    eslint: "npm:^8.52.0"
+    jest: "npm:^29.7.0"
+    pino: "npm:^8.16.1"
+    typescript: "npm:^5.2.2"
+    ws: "npm:^8.14.2"
+  languageName: unknown
+  linkType: soft
+
+"@midnight-ntwrk/silent-link-cli@workspace:src/silent-link-cli":
+  version: 0.0.0-use.local
+  resolution: "@midnight-ntwrk/silent-link-cli@workspace:src/silent-link-cli"
+  dependencies:
+    "@midnight-ntwrk/silent-link-api": "workspace:*"
+    "@midnight-ntwrk/silent-link-contract": "workspace:*"
+    "@types/jest": "npm:^29.5.12"
+    "@types/ws": "npm:^8.5.9"
+    eslint: "npm:^8.52.0"
+    jest: "npm:^29.7.0"
+    pino: "npm:^8.16.1"
+    ts-jest: "npm:^29.1.2"
+    typescript: "npm:^5.2.2"
+    ws: "npm:^8.14.2"
+  languageName: unknown
+  linkType: soft
+
+"@midnight-ntwrk/silent-link-contract@workspace:*, @midnight-ntwrk/silent-link-contract@workspace:src/contract":
+  version: 0.0.0-use.local
+  resolution: "@midnight-ntwrk/silent-link-contract@workspace:src/contract"
+  dependencies:
+    "@midnight-ntwrk/compact": "workspace:*"
+    eslint: "npm:^8.52.0"
+    jest: "npm:^29.7.0"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
+
+"@midnight-ntwrk/silent-link-ui@workspace:src/silent-link-ui":
+  version: 0.0.0-use.local
+  resolution: "@midnight-ntwrk/silent-link-ui@workspace:src/silent-link-ui"
+  dependencies:
+    "@emotion/react": "npm:^11.11.1"
+    "@emotion/styled": "npm:^11.11.0"
+    "@midnight-ntwrk/silent-link-api": "workspace:*"
+    "@midnight-ntwrk/silent-link-contract": "workspace:*"
+    "@mui/icons-material": "npm:^5.14.14"
+    "@mui/material": "npm:^5.14.14"
+    "@originjs/vite-plugin-commonjs": "npm:^1.0.3"
+    "@types/react": "npm:^18.2.0"
+    "@types/react-dom": "npm:^18.2.0"
+    buffer: "npm:^6.0.3"
+    eslint: "npm:^8.52.0"
+    eslint-config-standard-with-typescript: "npm:^39.1.1"
+    eslint-plugin-react: "npm:^7.33.2"
+    http-server: "npm:^14.1.1"
+    jest: "npm:^29.7.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-router-dom: "npm:6.17.0"
+    typescript: "npm:^5.2.2"
+    vite: "npm:^4.5.1"
+  languageName: unknown
+  linkType: soft
+
 "@midnight-ntwrk/wallet-api@npm:^3.2.3, @midnight-ntwrk/wallet-api@npm:^3.3.1":
   version: 3.3.1
   resolution: "@midnight-ntwrk/wallet-api@npm:3.3.1"
@@ -1509,137 +1479,6 @@ __metadata:
   checksum: 10/34233e343012d704f5d94c14023f888fef78b12c82a159d13632c9bebf3d8a052b1053e4ac7dc723c8b86f38ff17b59f60141795262505ea2b9a15be4304085a
   languageName: node
   linkType: hard
-
-"@midnight-ntwrk/welcome-api@workspace:*, @midnight-ntwrk/welcome-api@workspace:examples/welcome/api":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-api@workspace:examples/welcome/api"
-  dependencies:
-    "@midnight-ntwrk/welcome-helpers": "workspace:*"
-    "@types/uuid": "npm:^9.0.6"
-    eslint: "npm:^8.52.0"
-    typescript: "npm:^5.2.2"
-    uuid: "npm:^9.0.1"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-contract@workspace:*, @midnight-ntwrk/welcome-contract@workspace:examples/welcome/contract":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-contract@workspace:examples/welcome/contract"
-  dependencies:
-    "@midnight-ntwrk/compact": "workspace:*"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-helpers@workspace:*, @midnight-ntwrk/welcome-helpers@workspace:examples/welcome/helpers":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-helpers@workspace:examples/welcome/helpers"
-  dependencies:
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-midnight-js@workspace:*, @midnight-ntwrk/welcome-midnight-js@workspace:examples/welcome/midnight-js":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-midnight-js@workspace:examples/welcome/midnight-js"
-  dependencies:
-    "@midnight-ntwrk/welcome-api": "workspace:*"
-    "@midnight-ntwrk/welcome-contract": "workspace:*"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    typescript: "npm:^5.2.2"
-    uuid: "npm:^9.0.1"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-organizer-cli@workspace:examples/welcome/organizer-cli":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-organizer-cli@workspace:examples/welcome/organizer-cli"
-  dependencies:
-    "@midnight-ntwrk/welcome-contract": "workspace:*"
-    "@midnight-ntwrk/welcome-midnight-js": "workspace:*"
-    eslint: "npm:^8.52.0"
-    jest: "npm:^29.7.0"
-    pino: "npm:^8.16.1"
-    typescript: "npm:^5.2.2"
-    ws: "npm:^8.14.2"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-organizer-ui@workspace:examples/welcome/organizer-ui":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-organizer-ui@workspace:examples/welcome/organizer-ui"
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@emotion/styled": "npm:^11.11.0"
-    "@midnight-ntwrk/welcome-api": "workspace:*"
-    "@midnight-ntwrk/welcome-contract": "workspace:*"
-    "@midnight-ntwrk/welcome-midnight-js": "workspace:*"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/material": "npm:^5.14.14"
-    "@types/react": "npm:^18.2.0"
-    "@types/react-dom": "npm:^18.2.0"
-    "@vitejs/plugin-react": "npm:^4.1.1"
-    eslint: "npm:^8.52.0"
-    eslint-config-standard-with-typescript: "npm:^39.1.1"
-    eslint-plugin-react: "npm:^7.33.2"
-    http-server: "npm:^14.1.1"
-    jest: "npm:^29.7.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router-dom: "npm:6.17.0"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^4.5.1"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-participant-ui@workspace:examples/welcome/participant-ui":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-participant-ui@workspace:examples/welcome/participant-ui"
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@emotion/styled": "npm:^11.11.0"
-    "@midnight-ntwrk/welcome-api": "workspace:*"
-    "@midnight-ntwrk/welcome-contract": "workspace:*"
-    "@midnight-ntwrk/welcome-midnight-js": "workspace:*"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/material": "npm:^5.14.14"
-    "@originjs/vite-plugin-commonjs": "npm:^1.0.3"
-    "@types/react": "npm:^18.2.0"
-    "@types/react-dom": "npm:^18.2.0"
-    buffer: "npm:^6.0.3"
-    eslint: "npm:^8.52.0"
-    eslint-config-standard-with-typescript: "npm:^39.1.1"
-    eslint-plugin-react: "npm:^7.33.2"
-    http-server: "npm:^14.1.1"
-    jest: "npm:^29.7.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router-dom: "npm:6.17.0"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^4.5.1"
-  languageName: unknown
-  linkType: soft
-
-"@midnight-ntwrk/welcome-ui-tests@workspace:examples/welcome/ui-tests":
-  version: 0.0.0-use.local
-  resolution: "@midnight-ntwrk/welcome-ui-tests@workspace:examples/welcome/ui-tests"
-  dependencies:
-    "@playwright/test": "npm:^1.42.1"
-    allure-commandline: "npm:^2.27.0"
-    allure-playwright: "npm:^2.15.0"
-    dotenv: "npm:^16.4.5"
-    eslint: "npm:^8.57.0"
-    eslint-config-standard-with-typescript: "npm:^39.1.1"
-    pino: "npm:^9.1.0"
-    pino-pretty: "npm:^11.1.0"
-    typescript: "npm:^5.4.3"
-  languageName: unknown
-  linkType: soft
 
 "@midnight-ntwrk/zswap@npm:^0.3.11, @midnight-ntwrk/zswap@npm:^0.3.8":
   version: 0.3.11
@@ -1894,17 +1733,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.42.1":
-  version: 1.44.1
-  resolution: "@playwright/test@npm:1.44.1"
-  dependencies:
-    playwright: "npm:1.44.1"
-  bin:
-    playwright: cli.js
-  checksum: 10/572b4c97834fae54fda833939b8f376df2c301b724f9825a3c705533efc124beb346dd9406f54cd771b3f79c00f0e5c70b5469ef33818a0d2e2ea17b19636f9a
-  languageName: node
-  linkType: hard
-
 "@popperjs/core@npm:^2.11.8":
   version: 2.11.8
   resolution: "@popperjs/core@npm:2.11.8"
@@ -2089,7 +1917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.11, @types/jest@npm:^29.5.12, @types/jest@npm:^29.5.6":
+"@types/jest@npm:^29.5.12, @types/jest@npm:^29.5.6":
   version: 29.5.12
   resolution: "@types/jest@npm:29.5.12"
   dependencies:
@@ -2237,13 +2065,6 @@ __metadata:
   version: 4.0.5
   resolution: "@types/tough-cookie@npm:4.0.5"
   checksum: 10/01fd82efc8202670865928629697b62fe9bf0c0dcbc5b1c115831caeb073a2c0abb871ff393d7df1ae94ea41e256cb87d2a5a91fd03cdb1b0b4384e08d4ee482
-  languageName: node
-  linkType: hard
-
-"@types/uuid@npm:^9.0.6":
-  version: 9.0.8
-  resolution: "@types/uuid@npm:9.0.8"
-  checksum: 10/b8c60b7ba8250356b5088302583d1704a4e1a13558d143c549c408bf8920535602ffc12394ede77f8a8083511b023704bc66d1345792714002bfa261b17c5275
   languageName: node
   linkType: hard
 
@@ -2402,9 +2223,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react@npm:^4.1.1":
-  version: 4.3.0
-  resolution: "@vitejs/plugin-react@npm:4.3.0"
+"@vitejs/plugin-react@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "@vitejs/plugin-react@npm:4.3.1"
   dependencies:
     "@babel/core": "npm:^7.24.5"
     "@babel/plugin-transform-react-jsx-self": "npm:^7.24.5"
@@ -2413,7 +2234,7 @@ __metadata:
     react-refresh: "npm:^0.14.2"
   peerDependencies:
     vite: ^4.2.0 || ^5.0.0
-  checksum: 10/b96cfcfef10a7bb9a27cc4678c3828acd05522ce31793679d414300f29902f55d6dd88054e5801b5e67c34817a610a7fcb350a4896ac719320777653c98ca7a9
+  checksum: 10/a9d1eb30c968bf719a3277067211493746579aee14a7af8c0edb2cde38e8e5bbd461e62a41c3590e2c6eb04a047114eb3e97dcd591967625fbbc7aead8dfaf90
   languageName: node
   linkType: hard
 
@@ -2575,7 +2396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"allure-commandline@npm:^2.27.0, allure-commandline@npm:^2.28.0":
+"allure-commandline@npm:^2.28.0":
   version: 2.29.0
   resolution: "allure-commandline@npm:2.29.0"
   bin:
@@ -2606,15 +2427,6 @@ __metadata:
     properties: "npm:^1.2.1"
     strip-ansi: "npm:^5.2.0"
   checksum: 10/ceade5bf806b454cab4d5de4bb21d8ec08514d27fe2a24ad76c566ea2f76214fc25fd2d9c86291bfada52e867587dcb68335719b8089a8dea83bbace9a8b91b9
-  languageName: node
-  linkType: hard
-
-"allure-playwright@npm:^2.15.0":
-  version: 2.15.1
-  resolution: "allure-playwright@npm:2.15.1"
-  dependencies:
-    allure-js-commons: "npm:2.15.1"
-  checksum: 10/b8148cb55b7f0f8d5ef831c8383eea729baa261e405975d8d837cf784912a57618bad5be58c4057ecc7c6873a6b7d6aafcd87f2b4199db6a1bf06d0f9987a9e3
   languageName: node
   linkType: hard
 
@@ -3918,13 +3730,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.4.5":
-  version: 16.4.5
-  resolution: "dotenv@npm:16.4.5"
-  checksum: 10/55a3134601115194ae0f924e54473459ed0d9fc340ae610b676e248cca45aa7c680d86365318ea964e6da4e2ea80c4514c1adab5adb43d6867fb57ff068f95c8
-  languageName: node
-  linkType: hard
-
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -4697,7 +4502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.52.0, eslint@npm:^8.57.0":
+"eslint@npm:^8.52.0":
   version: 8.57.0
   resolution: "eslint@npm:8.57.0"
   dependencies:
@@ -4872,7 +4677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-copy@npm:^3.0.0, fast-copy@npm:^3.0.2":
+"fast-copy@npm:^3.0.0":
   version: 3.0.2
   resolution: "fast-copy@npm:3.0.2"
   checksum: 10/97e1022e2aaa27acf4a986d679310bfd66bfb87fe8da9dd33b698e3e50189484001cf1eeb9670e19b59d9d299828ed86c8da354c954f125995ab2a6331c5f290
@@ -5140,31 +4945,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:2.3.2":
-  version: 2.3.2
-  resolution: "fsevents@npm:2.3.2"
-  dependencies:
-    node-gyp: "npm:latest"
-  checksum: 10/6b5b6f5692372446ff81cf9501c76e3e0459a4852b3b5f1fc72c103198c125a6b8c72f5f166bdd76ffb2fca261e7f6ee5565daf80dca6e571e55bcc589cc1256
-  conditions: os=darwin
-  languageName: node
-  linkType: hard
-
 "fsevents@npm:^2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
     node-gyp: "npm:latest"
   checksum: 10/4c1ade961ded57cdbfbb5cac5106ec17bc8bccd62e16343c569a0ceeca83b9dfef87550b4dc5cbb89642da412b20c5071f304c8c464b80415446e8e155a038c0
-  conditions: os=darwin
-  languageName: node
-  linkType: hard
-
-"fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>":
-  version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
-  dependencies:
-    node-gyp: "npm:latest"
   conditions: os=darwin
   languageName: node
   linkType: hard
@@ -7777,41 +7563,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino-pretty@npm:^11.1.0":
-  version: 11.1.0
-  resolution: "pino-pretty@npm:11.1.0"
-  dependencies:
-    colorette: "npm:^2.0.7"
-    dateformat: "npm:^4.6.3"
-    fast-copy: "npm:^3.0.2"
-    fast-safe-stringify: "npm:^2.1.1"
-    help-me: "npm:^5.0.0"
-    joycon: "npm:^3.1.1"
-    minimist: "npm:^1.2.6"
-    on-exit-leak-free: "npm:^2.1.0"
-    pino-abstract-transport: "npm:^1.0.0"
-    pump: "npm:^3.0.0"
-    readable-stream: "npm:^4.0.0"
-    secure-json-parse: "npm:^2.4.0"
-    sonic-boom: "npm:^4.0.1"
-    strip-json-comments: "npm:^3.1.1"
-  bin:
-    pino-pretty: bin.js
-  checksum: 10/f1c5964bffd421a57c6fec5f621c0720b149e412f78b7df882ae5decd8fc7b79ea3cb0f0cbb1c9a2863dc0128c5d39c1e09999af58244d9f822ccae7200e08fa
-  languageName: node
-  linkType: hard
-
 "pino-std-serializers@npm:^6.0.0":
   version: 6.2.2
   resolution: "pino-std-serializers@npm:6.2.2"
   checksum: 10/a00cdff4e1fbc206da9bed047e6dc400b065f43e8b4cef1635b0192feab0e8f932cdeb0faaa38a5d93d2e777ba4cda939c2ed4c1a70f6839ff25f9aef97c27ff
-  languageName: node
-  linkType: hard
-
-"pino-std-serializers@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "pino-std-serializers@npm:7.0.0"
-  checksum: 10/884e08f65aa5463d820521ead3779d4472c78fc434d8582afb66f9dcb8d8c7119c69524b68106cb8caf92c0487be7794cf50e5b9c0383ae65b24bf2a03480951
   languageName: node
   linkType: hard
 
@@ -7836,27 +7591,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pino@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "pino@npm:9.1.0"
-  dependencies:
-    atomic-sleep: "npm:^1.0.0"
-    fast-redact: "npm:^3.1.1"
-    on-exit-leak-free: "npm:^2.1.0"
-    pino-abstract-transport: "npm:^1.2.0"
-    pino-std-serializers: "npm:^7.0.0"
-    process-warning: "npm:^3.0.0"
-    quick-format-unescaped: "npm:^4.0.3"
-    real-require: "npm:^0.2.0"
-    safe-stable-stringify: "npm:^2.3.1"
-    sonic-boom: "npm:^4.0.1"
-    thread-stream: "npm:^3.0.0"
-  bin:
-    pino: bin.js
-  checksum: 10/b7b0bdfdc2d9db017fa690e85f2e8ad2ddda09b1cbccb9868bc55d9a218ab3e9e4d75e6beb9d44fef10c4982d8719db4cf2325ea1f866d2fb37b7dff7f7297b1
-  languageName: node
-  linkType: hard
-
 "pirates@npm:^4.0.4":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -7870,30 +7604,6 @@ __metadata:
   dependencies:
     find-up: "npm:^4.0.0"
   checksum: 10/9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
-  languageName: node
-  linkType: hard
-
-"playwright-core@npm:1.44.1":
-  version: 1.44.1
-  resolution: "playwright-core@npm:1.44.1"
-  bin:
-    playwright-core: cli.js
-  checksum: 10/f79f9022bbb760daed371e36c802b27d43dc75e67de4d139d83b47feea51c8b884f3296cce85c3afa71c942290cef1b4369cd9ddf4dda5457a0a81772c73b50a
-  languageName: node
-  linkType: hard
-
-"playwright@npm:1.44.1":
-  version: 1.44.1
-  resolution: "playwright@npm:1.44.1"
-  dependencies:
-    fsevents: "npm:2.3.2"
-    playwright-core: "npm:1.44.1"
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  bin:
-    playwright: cli.js
-  checksum: 10/3207178a78f1c971dddf99c9a08052e462c882092e0d47e3dd8287ced40897a49e387e545a61d31e5d68f7e443d7818660aa12ce43ab662d01d95bcfcfeca2ca
   languageName: node
   linkType: hard
 
@@ -8477,6 +8187,7 @@ __metadata:
     "@types/node": "npm:^18.18.6"
     "@typescript-eslint/eslint-plugin": "npm:^6.8.0"
     "@typescript-eslint/parser": "npm:^6.8.0"
+    "@vitejs/plugin-react": "npm:^4.3.1"
     eslint: "npm:^8.52.0"
     eslint-config-prettier: "npm:^9.0.0"
     eslint-plugin-import: "npm:^2.28.1"
@@ -8754,15 +8465,6 @@ __metadata:
   dependencies:
     atomic-sleep: "npm:^1.0.0"
   checksum: 10/e03c9611e43fa81132cd2ce0fe4eb7fbcf19db267e9dec20dc6c586f82465c9c906e91a02f72150c740463ad9335536ea2131850307aaa6686d1fb5d4cc4be3e
-  languageName: node
-  linkType: hard
-
-"sonic-boom@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "sonic-boom@npm:4.0.1"
-  dependencies:
-    atomic-sleep: "npm:^1.0.0"
-  checksum: 10/449bdc39f4333a321bb754319e9452c3e94409654b2ddf8e40307a1a413b953bed3b3b092a4992ab3fb7cd1a7c95bdde5a046ac4e0405d7c92c60802452c060c
   languageName: node
   linkType: hard
 
@@ -9244,15 +8946,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"thread-stream@npm:^3.0.0":
-  version: 3.0.2
-  resolution: "thread-stream@npm:3.0.2"
-  dependencies:
-    real-require: "npm:^0.2.0"
-  checksum: 10/988aa87a2f4102d0160ccc76b764d219c6bb44b3f723ffda608d44016323f9066c563e663ff2e80be417fe81d15203f5c340b2284adf8bfb7e56554349fe2dab
-  languageName: node
-  linkType: hard
-
 "tmp@npm:^0.2.1":
   version: 0.2.3
   resolution: "tmp@npm:0.2.3"
@@ -9589,7 +9282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2, typescript@npm:^5.4.3":
+"typescript@npm:^5.2.2":
   version: 5.4.5
   resolution: "typescript@npm:5.4.5"
   bin:
@@ -9599,7 +9292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.4.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
   version: 5.4.5
   resolution: "typescript@patch:typescript@npm%3A5.4.5#optional!builtin<compat/typescript>::version=5.4.5&hash=d69c25"
   bin:
@@ -9722,15 +9415,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 10/9a5f7aa1d6f56dd1e8d5f2478f855f25c645e64e26e347a98e98d95781d5ed20062d6cca2eecb58ba7c84bc3910be95c0451ef4161906abaab44f9cb68ffbdd1
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "uuid@npm:9.0.1"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 10/9d0b6adb72b736e36f2b1b53da0d559125ba3e39d913b6072f6f033e0c87835b414f0836b45bcfaf2bdf698f92297fea1c3cc19b0b258bc182c9c43cc0fab9f2
   languageName: node
   linkType: hard
 

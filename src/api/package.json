@@ -1,5 +1,5 @@
 {
-  "name": "@midnight-ntwrk/bboard-api",
+  "name": "@midnight-ntwrk/silent-link-api",
   "version": "0.1.0",
   "author": "IOG",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@midnight-ntwrk/bboard-contract": "workspace:*",
+    "@midnight-ntwrk/silent-link-contract": "workspace:*",
     "pino": "^8.16.1",
     "ws": "^8.14.2"
   },

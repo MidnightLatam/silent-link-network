@@ -1,6 +1,6 @@
 import { createLogger } from '../logger-utils.js';
 import { run } from '../index.js';
-import { AriadneQaRemoteConfig } from '../config';
+import { AriadneQaRemoteConfig } from '../config.js';
 
 const config = new AriadneQaRemoteConfig();
 config.setNetworkId();

@@ -1,4 +1,4 @@
-import { STATE } from '@midnight-ntwrk/bboard-contract';
+import { STATE } from '@midnight-ntwrk/silent-link-contract';
 import { CompactError } from '@midnight-ntwrk/compact-runtime';
 import { type Resource } from '@midnight-ntwrk/wallet';
 import { type Wallet } from '@midnight-ntwrk/wallet-api';

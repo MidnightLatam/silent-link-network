@@ -17,8 +17,8 @@ import {
   utils,
   type BBoardDerivedState,
   type DeployedBBoardContract,
-} from '@midnight-ntwrk/bboard-api';
-import { ledger, type Ledger, STATE } from '@midnight-ntwrk/bboard-contract';
+} from '@midnight-ntwrk/silent-link-api';
+import { ledger, type Ledger, STATE } from '@midnight-ntwrk/silent-link-contract';
 import {
   type BalancedTransaction,
   createBalancedTx,

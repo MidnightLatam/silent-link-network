@@ -1,5 +1,5 @@
 {
-  "name": "@midnight-ntwrk/bboard-ui",
+  "name": "@midnight-ntwrk/silent-link-ui",
   "version": "0.1.0",
   "author": "IOG",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "start": "http-server --port 0 ./dist",
     "dev": "vite",
     "prepack": "yarn build",
-    "build": "tsc && vite build --mode devnet && cp -r ../contract/dist/managed/bboard/keys ./dist/keys && cp -r ../contract/dist/managed/bboard/zkir ./dist/zkir",
+    "build": "tsc && vite build --mode devnet && cp -r ../contract/dist/managed/silentLink/keys ./dist/keys && cp -r ../contract/dist/managed/silentLink/zkir ./dist/zkir",
     "preview": "vite preview",
     "lint": "eslint ./src",
     "test": "jest --passWithNoTests"
@@ -17,8 +17,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@midnight-ntwrk/bboard-api": "workspace:*",
-    "@midnight-ntwrk/bboard-contract": "workspace:*",
+    "@midnight-ntwrk/silent-link-api": "workspace:*",
+    "@midnight-ntwrk/silent-link-contract": "workspace:*",
     "@mui/icons-material": "^5.14.14",
     "@mui/material": "^5.14.14",
     "buffer": "^6.0.3",

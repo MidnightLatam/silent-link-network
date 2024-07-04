@@ -1,4 +1,4 @@
-import { type DeployedBBoardAPI, BBoardAPI, type BBoardProviders } from '@midnight-ntwrk/bboard-api';
+import { type DeployedBBoardAPI, BBoardAPI, type BBoardProviders } from '@midnight-ntwrk/silent-link-api';
 import { type ContractAddress } from '@midnight-ntwrk/compact-runtime';
 import {
   BehaviorSubject,

@@ -1,5 +1,5 @@
 {
-  "name": "@midnight-ntwrk/bboard-contract",
+  "name": "@midnight-ntwrk/silent-link-contract",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -13,10 +13,10 @@
     }
   },
   "scripts": {
-    "compact": "run-compactc src/bboard.compact ./src/managed/bboard",
+    "compact": "run-compactc src/silentLink.compact ./src/managed/silentLink",
     "test": "jest --passWithNoTests",
     "prepack": "yarn build",
-    "build": "rm -rf dist && tsc --project tsconfig.build.json && cp -Rf ./src/managed ./dist/managed && cp ./src/bboard.compact ./dist",
+    "build": "rm -rf dist && tsc --project tsconfig.build.json && cp -Rf ./src/managed ./dist/managed && cp ./src/silentLink.compact ./dist",
     "lint": "eslint src",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
