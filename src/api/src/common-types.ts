@@ -6,7 +6,7 @@
 
 import { type MidnightProviders } from '@midnight-ntwrk/midnight-js-types';
 import { type DeployedContract, type StateWithZswap } from '@midnight-ntwrk/midnight-js-contracts';
-import type { STATE, BBoardPrivateState, Contract, Witnesses } from '@midnight-ntwrk/silent-link-contract';
+import type { STATE, SilentLinkPrivateState, Contract, Witnesses } from '@midnight-ntwrk/silent-link-contract';
 
 /**
  * The private states consumed throughout the application.
@@ -28,7 +28,7 @@ export type PrivateStates = {
   /**
    * Key used to provide the private state for {@link BBoardContract} deployments.
    */
-  readonly bboardPrivateState: BBoardPrivateState;
+  readonly silentLinkPrivateState: SilentLinkPrivateState;
 };
 
 /**
@@ -37,8 +37,8 @@ export type PrivateStates = {
  * @public
  */
 export type BBoardContract = Contract<
-  StateWithZswap<BBoardPrivateState>,
-  Witnesses<StateWithZswap<BBoardPrivateState>>
+  StateWithZswap<SilentLinkPrivateState>,
+  Witnesses<StateWithZswap<SilentLinkPrivateState>>
 >;
 
 /**
@@ -60,7 +60,7 @@ export type BBoardProviders = MidnightProviders<BBoardCircuitKeys, PrivateStates
  *
  * @public
  */
-export type DeployedBBoardContract = DeployedContract<PrivateStates, 'bboardPrivateState', BBoardContract>;
+export type DeployedBBoardContract = DeployedContract<PrivateStates, 'silentLinkPrivateState', BBoardContract>;
 
 /**
  * A type that represents the derived combination of public (or ledger), and private state.
@@ -75,7 +75,7 @@ export type BBoardDerivedState = {
    *
    * @remarks
    * The `poster` property of the public (or ledger) state is the public key of the message poster, while
-   * the `secretKey` property of {@link BBoardPrivateState} is the secret key of the current user. If
+   * the `secretKey` property of {@link SilentLinkPrivateState} is the secret key of the current user. If
    * `poster` corresponds to `secretKey`, then `isOwner` is `true`.
    */
   readonly isOwner: boolean;

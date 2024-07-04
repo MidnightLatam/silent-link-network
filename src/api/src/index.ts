@@ -13,9 +13,9 @@ import {
 import { type Logger } from 'pino';
 import type { BBoardDerivedState, BBoardContract, BBoardProviders, DeployedBBoardContract } from './common-types.js';
 import {
-  type BBoardPrivateState,
+  type SilentLinkPrivateState,
   Contract,
-  createBBoardPrivateState,
+  createSilentLinkPrivateState,
   ledger,
   pureCircuits,
   witnesses,
@@ -45,7 +45,7 @@ export interface DeployedBBoardAPI {
  * contract.
  *
  * @remarks
- * The `BBoardPrivateState` is managed at the DApp level by a private state provider. As such, this
+ * The `SilentLinkPrivateState` is managed at the DApp level by a private state provider. As such, this
  * private state is shared between all instances of {@link BBoardAPI}, and their underlying deployed
  * contracts. The private state defines a `'secretKey'` property that effectively identifies the current
  * user, and is used to determine if the current user is the poster of the message as the observable
@@ -86,7 +86,7 @@ export class BBoardAPI implements DeployedBBoardAPI {
         //    since the private state of the bulletin board application never changes, we can query the
         //    private state once and always use the same value with `combineLatest`. In applications
         //    where the private state is expected to change, we would need to make this an `Observable`.
-        from(providers.privateStateProvider.get('bboardPrivateState') as Promise<BBoardPrivateState>),
+        from(providers.privateStateProvider.get('silentLinkPrivateState') as Promise<SilentLinkPrivateState>),
       ],
       // ...and combine them to produce the required derived state.
       (ledgerState, privateState) => {
@@ -180,7 +180,7 @@ export class BBoardAPI implements DeployedBBoardAPI {
     const deployedBBoardContract = await deployContract(
       // EXERCISE 5: FILL IN THE CORRECT ARGUMENTS TO deployContract
       providers, // EXERCISE ANSWER
-      'bboardPrivateState', // EXERCISE ANSWER
+      'silentLinkPrivateState', // EXERCISE ANSWER
       await BBoardAPI.getPrivateState(providers), // EXERCISE ANSWER
       createBBoardContract(providers.walletProvider.coinPublicKey), // EXERCISE ANSWER
     );
@@ -215,7 +215,7 @@ export class BBoardAPI implements DeployedBBoardAPI {
       contractAddress,
       createBBoardContract(providers.walletProvider.coinPublicKey),
       {
-        privateStateKey: 'bboardPrivateState',
+        privateStateKey: 'silentLinkPrivateState',
         initialPrivateState: await BBoardAPI.getPrivateState(providers),
       },
     );
@@ -229,10 +229,10 @@ export class BBoardAPI implements DeployedBBoardAPI {
     return new BBoardAPI(deployedBBoardContract, providers, logger);
   }
 
-  private static async getPrivateState(providers: BBoardProviders): Promise<BBoardPrivateState> {
-    const existingPrivateState = await providers.privateStateProvider.get('bboardPrivateState');
+  private static async getPrivateState(providers: BBoardProviders): Promise<SilentLinkPrivateState> {
+    const existingPrivateState = await providers.privateStateProvider.get('silentLinkPrivateState');
 
-    return existingPrivateState ?? createBBoardPrivateState(utils.randomBytes(32));
+    return existingPrivateState ?? createSilentLinkPrivateState(utils.randomBytes(32));
   }
 }
 

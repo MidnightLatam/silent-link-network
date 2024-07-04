@@ -3,7 +3,7 @@
  * as well as the single witness function that accesses it.
  */
 
-import { Ledger } from './managed/bboard/contract/index.cjs';
+import { Ledger } from './managed/silentLink/contract/index.cjs';
 import { WitnessContext } from '@midnight-ntwrk/compact-runtime';
 
 /* **********************************************************************
@@ -14,13 +14,13 @@ import { WitnessContext } from '@midnight-ntwrk/compact-runtime';
  * make an object of that type.
  */
 
-export type BBoardPrivateState = {
+export type SilentLinkPrivateState = {
   // EXERCISE 1a: FILL IN A REPRESENTATION OF THE PRIVATE STATE
   readonly secretKey: Uint8Array; // EXERCISE ANSWER
 };
 
-export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
-  // EXERCISE 1b: INITIALIZE THE OBJECT OF TYPE BBoardPrivateState
+export const createSilentLinkPrivateState = (secretKey: Uint8Array) => ({
+  // EXERCISE 1b: INITIALIZE THE OBJECT OF TYPE SilentLinkPrivateState
   secretKey, // EXERCISE ANSWER
 });
 
@@ -32,7 +32,7 @@ export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
  * The implementation of each function always takes as its first argument
  * a value of type WitnessContext<L, PS>, where L is the ledger object type
  * that corresponds to the ledger declaration in the Compact code, and PS
- *  is the private state type, like BBoardPrivateState defined above.
+ *  is the private state type, like SilentLinkPrivateState defined above.
  *
  * A WitnessContext has three
  * fields:
@@ -43,7 +43,7 @@ export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
  * The other arguments (after the first) to each witness function
  * correspond to the ones declared in Compact for the witness function.
  * The function's return value is a tuple of the new private state and
- * the declared return value.  In this case, that's a BBoardPrivateState
+ * the declared return value.  In this case, that's a SilentLinkPrivateState
  * and a Uint8Array (because the contract declared a return value of Bytes[32],
  * and that's a Uint8Array in TypeScript).
  *
@@ -52,7 +52,7 @@ export const createBBoardPrivateState = (secretKey: Uint8Array) => ({
  * only the binding for the privateState in scope.
  */
 export const witnesses = {
-  local_secret_key: ({ privateState }: WitnessContext<Ledger, BBoardPrivateState>): [BBoardPrivateState, Uint8Array] => [
+  local_secret_key: ({ privateState }: WitnessContext<Ledger, SilentLinkPrivateState>): [SilentLinkPrivateState, Uint8Array] => [
     // EXERCISE 2: WHAT ARE THE CORRECT TWO VALUES TO RETURN HERE?
     privateState, // EXERCISE ANSWER
     privateState.secretKey, // EXERCISE ANSWER

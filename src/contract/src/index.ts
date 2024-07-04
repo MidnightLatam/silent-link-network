@@ -1,2 +1,2 @@
-export * from './managed/bboard/contract/index.cjs';
+export * from './managed/silentLink/contract/index.cjs';
 export * from './witnesses.js';

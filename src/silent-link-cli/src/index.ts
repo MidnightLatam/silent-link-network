@@ -128,7 +128,7 @@ const displayLedgerState = async (
  */
 
 const displayPrivateState = async (providers: BBoardProviders, logger: Logger): Promise<void> => {
-  const privateState = await providers.privateStateProvider.get('bboardPrivateState');
+  const privateState = await providers.privateStateProvider.get('silentLinkPrivateState');
   if (privateState === null) {
     logger.info(`There is no existing bulletin board private state`);
   } else {
